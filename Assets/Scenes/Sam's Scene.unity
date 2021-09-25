@@ -163,6 +163,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead Cat
       objectReference: {fileID: 0}
+    - target: {fileID: 4458933096073159131, guid: fa049238e9cc4a04cb2b336c4d0297b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Dead_Cat
+      objectReference: {fileID: 0}
     - target: {fileID: 4458933096073159134, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
       propertyPath: sr
@@ -201,7 +206,7 @@ PrefabInstance:
     - target: {fileID: 4458933096073159135, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.46532
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4458933096073159135, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
@@ -342,7 +347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 401175236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.21, y: -0.02, z: -0.46532395}
+  m_LocalPosition: {x: 0.21, y: -0.02, z: 0}
   m_LocalScale: {x: 163.33867, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -478,6 +483,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Live Cat
       objectReference: {fileID: 0}
+    - target: {fileID: 4458933096073159131, guid: fa049238e9cc4a04cb2b336c4d0297b1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Live_Cat
+      objectReference: {fileID: 0}
     - target: {fileID: 4458933096073159134, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
       propertyPath: screen
@@ -511,7 +521,7 @@ PrefabInstance:
     - target: {fileID: 4458933096073159135, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.46532
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4458933096073159135, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}

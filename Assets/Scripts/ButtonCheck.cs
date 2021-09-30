@@ -14,13 +14,13 @@ public class ButtonCheck : MonoBehaviour
 		if (collision.gameObject.tag == "Live_Cat")
 		{
 			animator.SetBool("pushed", true);
-            collision.attachedRigidbody.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+            collision.attachedRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
             //Button push function for interactibles here: opening door, activating mechanism, etc.
                 //Can recode to handle button pushes in the interactible script (will make this script constant), but this works for now
         }
     }
     private void OnTriggerExit2D(Collider2D collision) {
         animator.SetBool("pushed", false);
-        collision.attachedRigidbody.constraints = RigidbodyConstraints2D.FreezePositionY;
+        collision.attachedRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 }

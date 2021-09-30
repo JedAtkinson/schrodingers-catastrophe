@@ -10,6 +10,7 @@ public class MovePlayer : MonoBehaviour
     public GameObject opposite;
     public GameObject screen;
     private Vector3 opp_pos;
+    public int facing;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,15 +21,18 @@ public class MovePlayer : MonoBehaviour
     void Update()
     {
         direction = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(direction * playerSpeed, 0);
-        if (Input.GetKeyDown("space"))
+        if (direction > 0) facing = 1;
+        else if (direction < 0) facing = -1;
+        rb.velocity = new Vector2(direction * playerSpeed, rb.velocity.y);
+
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            opposite.SetActive(false);
+			rb.isKinematic = true;
             opp_pos = opposite.transform.position;
             opposite.transform.position = this.transform.position;
             this.transform.position = opp_pos;
-            opposite.SetActive(true);
+            rb.isKinematic = false;
+            rb.gravityScale *= -1;
         }
-        
     }
 }

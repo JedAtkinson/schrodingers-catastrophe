@@ -11,6 +11,9 @@ public class MovePlayer : MonoBehaviour
     public GameObject screen;
     private Vector3 opp_pos;
     public int facing;
+
+    public Animator anim;
+    public SpriteRenderer sr;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +24,21 @@ public class MovePlayer : MonoBehaviour
     void Update()
     {
         direction = Input.GetAxis("Horizontal");
-        if (direction > 0) facing = 1;
-        else if (direction < 0) facing = -1;
+        if (direction > 0)
+        {
+            facing = 1;
+            sr.flipX = false;
+        }
+        else if (direction < 0)
+        {
+            facing = -1;
+            sr.flipX = true;
+        }
         rb.velocity = new Vector2(direction * playerSpeed, rb.velocity.y);
+
+        // Walking animation
+        if (direction != 0) anim.SetBool("isWalking", true);
+        else anim.SetBool("isWalking", false);
 
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -33,6 +48,8 @@ public class MovePlayer : MonoBehaviour
             this.transform.position = opp_pos;
             rb.isKinematic = false;
             rb.gravityScale *= -1;
+
+            sr.flipY = !sr.flipY;
         }
     }
 }

@@ -148,16 +148,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4458933096073159129, guid: fa049238e9cc4a04cb2b336c4d0297b1,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4458933096073159129, guid: fa049238e9cc4a04cb2b336c4d0297b1,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 4458933096073159131, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
       propertyPath: m_Name
@@ -173,16 +163,6 @@ PrefabInstance:
       propertyPath: sr
       value: 
       objectReference: {fileID: 1798175539}
-    - target: {fileID: 4458933096073159134, guid: fa049238e9cc4a04cb2b336c4d0297b1,
-        type: 3}
-      propertyPath: screen
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4458933096073159134, guid: fa049238e9cc4a04cb2b336c4d0297b1,
-        type: 3}
-      propertyPath: opposite
-      value: 
-      objectReference: {fileID: 2011163016}
     - target: {fileID: 4458933096073159134, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
       propertyPath: other_position
@@ -243,7 +223,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fa049238e9cc4a04cb2b336c4d0297b1, type: 3}
 --- !u!1 &401175236
 GameObject:
@@ -434,18 +415,6 @@ SpriteRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 319016119}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1798175540 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4458933096073159135, guid: fa049238e9cc4a04cb2b336c4d0297b1,
-    type: 3}
-  m_PrefabInstance: {fileID: 319016119}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2011163016 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4458933096073159131, guid: fa049238e9cc4a04cb2b336c4d0297b1,
-    type: 3}
-  m_PrefabInstance: {fileID: 4458933095784220755}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2011163020 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4458933096073159135, guid: fa049238e9cc4a04cb2b336c4d0297b1,
@@ -542,36 +511,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4458933096073159129, guid: fa049238e9cc4a04cb2b336c4d0297b1,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4458933096073159131, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
       propertyPath: m_Name
       value: Live Cat
-      objectReference: {fileID: 0}
-    - target: {fileID: 4458933096073159131, guid: fa049238e9cc4a04cb2b336c4d0297b1,
-        type: 3}
-      propertyPath: m_TagString
-      value: Live_Cat
-      objectReference: {fileID: 0}
-    - target: {fileID: 4458933096073159134, guid: fa049238e9cc4a04cb2b336c4d0297b1,
-        type: 3}
-      propertyPath: screen
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4458933096073159134, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
       propertyPath: opposite
       value: 
       objectReference: {fileID: 1798175535}
-    - target: {fileID: 4458933096073159134, guid: fa049238e9cc4a04cb2b336c4d0297b1,
-        type: 3}
-      propertyPath: other_position
-      value: 
-      objectReference: {fileID: 1798175540}
     - target: {fileID: 4458933096073159135, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
       propertyPath: m_RootOrder

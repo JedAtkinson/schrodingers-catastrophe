@@ -17,13 +17,20 @@ public class Dash : MonoBehaviour
     }
     private void Update() {
         if (Input.GetKeyDown(KeyCode.LeftShift)){
+            Vector2 colliderBounds = GetComponent<BoxCollider2D>().bounds.extents;
+
             //Sets start and end positions for the dash
             dashStartPosition = transform.position;
             dashEndPosition = new Vector2(dashStartPosition.x + (dashDistance * playerScript.facing), dashStartPosition.y);
+            
+            //Checks if the target destination passes through a door and returns if it does
+            RaycastHit2D doorHit = Physics2D.Raycast(transform.position, Vector2.right * playerScript.facing, dashDistance + colliderBounds.x, LayerMask.GetMask("Door"));
+			if (doorHit){
+                return;
+            }
 
-            //Checks if the target destination is within a collider, and whether the cat would be within the collider given its own collider.
-                //!!!NOTE!!! This will need to be updated if the cat models are updated and moved away from circle colliders!!! It will break otherwise!!!
-			if (!Physics2D.OverlapBox(dashEndPosition, new Vector2(GetComponent<CircleCollider2D>().bounds.extents.x * 2, GetComponent<CircleCollider2D>().bounds.extents.y), 0)) {
+            //Checks if the target destination is clear of any obstacles and begins dash sequence if it is
+			if (!Physics2D.OverlapBox(dashEndPosition, new Vector2(colliderBounds.x, colliderBounds.y), 0)) {
                 StartCoroutine(DashCoroutine());
             }
         }

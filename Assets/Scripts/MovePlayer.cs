@@ -14,42 +14,46 @@ public class MovePlayer : MonoBehaviour
 
     public Animator anim;
     public SpriteRenderer sr;
-    // Start is called before the first frame update
+    public bool frozen;
+
     void Start()
     {
-        
+        frozen = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        direction = Input.GetAxis("Horizontal");
-        if (direction > 0)
-        {
-            facing = 1;
-            sr.flipX = false;
-        }
-        else if (direction < 0)
-        {
-            facing = -1;
-            sr.flipX = true;
-        }
-        rb.velocity = new Vector2(direction * playerSpeed, rb.velocity.y);
+        if (!frozen){
+			direction = Input.GetAxis("Horizontal");
+			if (direction > 0)
+			{
+				facing = 1;
+				sr.flipX = false;
+			}
+			else if (direction < 0)
+			{
+				facing = -1;
+				sr.flipX = true;
+			}
+			rb.velocity = new Vector2(direction * playerSpeed, rb.velocity.y);
 
-        // Walking animation
-        if (direction != 0) anim.SetBool("isWalking", true);
-        else anim.SetBool("isWalking", false);
+			// Walking animation
+			if (direction != 0) anim.SetBool("isWalking", true);
+			else anim.SetBool("isWalking", false);
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
+			
+        }
+		if (Input.GetKeyDown(KeyCode.R))
+		{
+            
 			rb.isKinematic = true;
-            opp_pos = opposite.transform.position;
-            opposite.transform.position = this.transform.position;
-            this.transform.position = opp_pos;
-            rb.isKinematic = false;
-            rb.gravityScale *= -1;
-
-            sr.flipY = !sr.flipY;
-        }
+			opp_pos = opposite.transform.position;
+			opposite.transform.position = this.transform.position;
+			this.transform.position = opp_pos;
+			rb.isKinematic = false;
+			rb.gravityScale *= -1;
+            
+			sr.flipY = !sr.flipY;
+		}
     }
 }

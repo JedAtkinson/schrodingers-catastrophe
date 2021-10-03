@@ -43,17 +43,18 @@ public class MovePlayer : MonoBehaviour
 
 			
         }
-		if (Input.GetKeyDown(KeyCode.R))
-		{
-            
-			rb.isKinematic = true;
-			opp_pos = opposite.transform.position;
-			opposite.transform.position = this.transform.position;
-			this.transform.position = opp_pos;
-			rb.isKinematic = false;
-			rb.gravityScale *= -1;
-            
-			sr.flipY = !sr.flipY;
+		if (!GameObject.FindWithTag("Dead_Cat").GetComponent<Dash>().swapFrozen) {
+			if (Input.GetKeyDown(KeyCode.R)) {
+				rb.isKinematic = true;
+				opp_pos = opposite.transform.position;
+				opposite.transform.position = this.transform.position;
+				this.transform.position = opp_pos;
+				rb.isKinematic = false;
+				rb.gravityScale *= -1;
+				
+				sr.flipY = !sr.flipY;
+			}
 		}
+		
     }
 }

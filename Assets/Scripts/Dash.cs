@@ -11,8 +11,10 @@ public class Dash : MonoBehaviour
 
     public float dashChargeTime;
     public Animator anim;
+    public bool swapFrozen;
 
     private void Start() {
+        swapFrozen = false;
         playerScript = GetComponent<MovePlayer>();
     }
     private void Update() {
@@ -31,17 +33,21 @@ public class Dash : MonoBehaviour
 
             //Checks if the target destination is clear of any obstacles and begins dash sequence if it is
 			if (!Physics2D.OverlapBox(dashEndPosition, new Vector2(colliderBounds.x, colliderBounds.y), 0)) {
+               
                 StartCoroutine(DashCoroutine());
+                
             }
         }
     }
 
     IEnumerator DashCoroutine()
     {
+		swapFrozen = true;
         anim.SetTrigger("Dash");
         anim.SetBool("isWalking", false);
         // Wait for animation to finish
         yield return new WaitForSeconds(dashChargeTime);
         transform.position = dashEndPosition;
+		swapFrozen = false;
     }
 }

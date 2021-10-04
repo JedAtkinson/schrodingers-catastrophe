@@ -18,36 +18,41 @@ public class Dash : MonoBehaviour
         playerScript = GetComponent<MovePlayer>();
     }
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.LeftShift)){
-            Vector2 colliderBounds = GetComponent<BoxCollider2D>().bounds.extents;
+        if (!swapFrozen) {
+			if (Input.GetKeyDown(KeyCode.LeftShift))
+			{
+				Vector2 colliderBounds = GetComponent<BoxCollider2D>().bounds.extents;
 
-            //Sets start and end positions for the dash
-            dashStartPosition = transform.position;
-            dashEndPosition = new Vector2(dashStartPosition.x + (dashDistance * playerScript.facing), dashStartPosition.y);
-            
-            //Checks if the target destination passes through a door and returns if it does
-            RaycastHit2D doorHit = Physics2D.Raycast(transform.position, Vector2.right * playerScript.facing, dashDistance + colliderBounds.x, LayerMask.GetMask("Door"));
-			if (doorHit){
-                return;
-            }
+				//Sets start and end positions for the dash
+				dashStartPosition = transform.position;
+				dashEndPosition = new Vector2(dashStartPosition.x + (dashDistance * playerScript.facing), dashStartPosition.y);
 
-            //Checks if the target destination is clear of any obstacles and begins dash sequence if it is
-			if (!Physics2D.OverlapBox(dashEndPosition, new Vector2(colliderBounds.x, colliderBounds.y), 0)) {
-               
-                StartCoroutine(DashCoroutine());
-                
-            }
+				//Checks if the target destination passes through a door and returns if it does
+				RaycastHit2D doorHit = Physics2D.Raycast(transform.position, Vector2.right * playerScript.facing, dashDistance + colliderBounds.x, LayerMask.GetMask("Door"));
+				if (doorHit)
+				{
+					return;
+				}
+
+				//Checks if the target destination is clear of any obstacles and begins dash sequence if it is
+				if (!Physics2D.OverlapBox(dashEndPosition, new Vector2(colliderBounds.x, colliderBounds.y), 0))
+				{
+
+					StartCoroutine(DashCoroutine());
+
+				}
+			}
         }
     }
 
     IEnumerator DashCoroutine()
     {
-		swapFrozen = true;
+        playerScript.frozen = swapFrozen = true;
         anim.SetTrigger("Dash");
         anim.SetBool("isWalking", false);
         // Wait for animation to finish
         yield return new WaitForSeconds(dashChargeTime);
         transform.position = dashEndPosition;
-		swapFrozen = false;
+		playerScript.frozen = swapFrozen = false;
     }
 }

@@ -6,12 +6,15 @@ using UnityEngine.UI;
 
 public class MenuButtons : MonoBehaviour
 {
+    public GameObject optionMenu;
     public TMPro.TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
 
     // On Scene Start
     void Start ()
     {
+        optionMenu.SetActive(true);
+
         //Get all users screen possible resolutions
         resolutions = Screen.resolutions;
         //Clears the resolution dropDown options
@@ -40,6 +43,15 @@ public class MenuButtons : MonoBehaviour
         //Sets the current resolution to display
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+        optionMenu.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            optionMenu.SetActive(!optionMenu.activeInHierarchy);
+        }
     }
 
     //Sets resolution when changed in ResolutionDropdown

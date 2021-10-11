@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7012674413552055718}
   - component: {fileID: 7012674413552055719}
   - component: {fileID: 7012674413552055712}
-  - component: {fileID: 4878436504922470630}
   - component: {fileID: 6679777504355410936}
   - component: {fileID: 6679777504355410943}
   - component: {fileID: 6679777504355410937}
@@ -130,21 +129,6 @@ MonoBehaviour:
   anim: {fileID: 6679777504355410943}
   sr: {fileID: 7012674413552055718}
   frozen: 0
---- !u!114 &4878436504922470630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7012674413552055717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36ae9b93eae6e9c4e95ae503382fffc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 7012674413552055719}
-  anim: {fileID: 1206333219412774915, guid: fa049238e9cc4a04cb2b336c4d0297b1, type: 3}
-  jumpForce: 5
 --- !u!61 &6679777504355410936
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1902,6 +1902,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead Cat
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4878436504922470630, guid: b94e2d379c321dd4e9d0ac0abac886bb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94e2d379c321dd4e9d0ac0abac886bb, type: 3}

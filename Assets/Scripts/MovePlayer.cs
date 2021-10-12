@@ -1,29 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovePlayer : MonoBehaviour
 {
-    public float direction;
-    public Rigidbody2D rb;
-    public float playerSpeed;
-    public GameObject opposite;
-    public GameObject screen;
-    private Vector3 opp_pos;
-    public int facing;
+	public float direction;
+	public Rigidbody2D rb;
+	public float playerSpeed;
+	public GameObject opposite;
+	public GameObject screen;
+	private Vector3 opp_pos;
+	public int facing;
 
-    public Animator anim;
-    public SpriteRenderer sr;
-    public bool frozen;
+	public Animator anim;
+	public SpriteRenderer sr;
+	public bool frozen;
 
-    void Start()
-    {
-        frozen = false;
-    }
+	public GameObject levelLoader;
 
-    void Update()
-    {
-        if (!frozen){
+	void Start()
+	{
+		frozen = false;
+	}
+
+	void Update()
+	{
+		if (!frozen)
+		{
 			direction = Input.GetAxis("Horizontal");
 			if (direction > 0)
 			{
@@ -41,20 +45,31 @@ public class MovePlayer : MonoBehaviour
 			if (direction != 0) anim.SetBool("isWalking", true);
 			else anim.SetBool("isWalking", false);
 
-			
-        }
-		if (!GameObject.FindWithTag("Dead_Cat").GetComponent<Dash>().swapFrozen) {
-			if (Input.GetKeyDown(KeyCode.R)) {
+
+		}
+		if (!GameObject.FindWithTag("Dead_Cat").GetComponent<Dash>().swapFrozen)
+		{
+			if (Input.GetKeyDown(KeyCode.R))
+			{
 				rb.isKinematic = true;
 				opp_pos = opposite.transform.position;
 				opposite.transform.position = this.transform.position;
 				this.transform.position = opp_pos;
 				rb.isKinematic = false;
 				rb.gravityScale *= -1;
-				
+
 				sr.flipY = !sr.flipY;
 			}
 		}
-		
-    }
+
+	}
+
+	void OnTriggerEnter2D(Collider2D collider)
+	{
+		if (collider.name == "Goal")
+        {
+			levelLoader.GetComponent<LevelLoader>().LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
+
+		}
+	}
 }

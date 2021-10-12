@@ -11,17 +11,17 @@ public class LevelLoader : MonoBehaviour
     // length of each animation (fade out: 0.5s, fade in: 0.5s)
     public float transitionTime = 0.5f;
 
-    public void LoadLevel(string sceneName)
+    public void LoadLevel(int sceneNumber)
     {
-        StartCoroutine(LoadLevelCoroutine(sceneName));
+        StartCoroutine(LoadLevelCoroutine(sceneNumber));
     }
 
-    IEnumerator LoadLevelCoroutine (string sceneName)
+    IEnumerator LoadLevelCoroutine (int sceneNumber)
     {
         //Starts transition out/in
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
         //Loads given sceneName
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneNumber);
     }
 }

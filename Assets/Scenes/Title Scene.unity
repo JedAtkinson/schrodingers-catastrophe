@@ -967,6 +967,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426032438}
   m_CullTransparentMesh: 0
+--- !u!114 &431383432 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5921619896705050647, guid: 419c5888142287d4e8bb0709fd46c5b8,
+    type: 3}
+  m_PrefabInstance: {fileID: 367996575}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 853c1d5ad715f624b8c9081bb6c9c065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &457620606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,13 +1146,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2007965120}
         m_MethodName: LoadLevel
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: Sam's Scene
+          m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &834958486
@@ -1532,13 +1544,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2007965120}
         m_MethodName: LoadLevel
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: Sam's Scene
+          m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &933213014
@@ -2001,7 +2013,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1086937988}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2007965120}
+        m_MethodName: LoadLevel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1086937988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2366,7 +2389,8 @@ MonoBehaviour:
   m_text: Level Select
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d78326a3be93034995cfca9fefd3da2, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -4791651801711676205, guid: 9d78326a3be93034995cfca9fefd3da2,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2652,7 +2676,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 431383432}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:

@@ -7,10 +7,25 @@ public class FollowPlayer : MonoBehaviour
     public GameObject cat;
     public GameObject otherCat;
     private GameObject newCat;
+
+    public float xMin;
+    public float xMax;
+    private float cameraY;
+    private float cameraX;
+
+    private Camera cam;
+    public GameObject[] edges;
+
     // Start is called before the first frame update
     void Start()
     {
+        cam = this.GetComponent<Camera>();
+        float width = cam.orthographicSize * cam.aspect;
 
+        edges = GameObject.FindGameObjectsWithTag("WorldEdge");
+
+        xMin = Mathf.Min((edges[0].transform.position.x), (edges[1].transform.position.x)) + width;
+        xMax = Mathf.Max((edges[0].transform.position.x), (edges[1].transform.position.x)) - width;
     }
 
     // Update is called once per frame
@@ -23,21 +38,25 @@ public class FollowPlayer : MonoBehaviour
             cat = newCat;
         }
 
-            float catDistance = cat.transform.position.x - otherCat.transform.position.x;
+        float catDistance = cat.transform.position.x - otherCat.transform.position.x;
+
         if (catDistance < 10 && catDistance > -10)
         {
-            this.transform.position = new Vector3(otherCat.transform.position.x + (catDistance / 2), this.transform.position.y, this.transform.position.z);
+            cameraX = otherCat.transform.position.x + (catDistance / 2);
         }
         else
         {
             if (catDistance > 10)
             {
-                this.transform.position = new Vector3(cat.transform.position.x - 5, this.transform.position.y, this.transform.position.z);
+                cameraX = cat.transform.position.x - 5;
             }
             if (catDistance < -10)
             {
-                this.transform.position = new Vector3(cat.transform.position.x + 5, this.transform.position.y, this.transform.position.z);
+                cameraX = cat.transform.position.x + 5;
             }
         }
+
+        //Update position
+        this.transform.position = new Vector3(Mathf.Clamp(cameraX, xMin, xMax), this.transform.position.y, this.transform.position.z);
     }
 }

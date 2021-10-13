@@ -19,7 +19,7 @@ public class Dash : MonoBehaviour
     }
     private void Update() {
         if (!swapFrozen) {
-			if (Input.GetKeyDown(KeyCode.LeftShift))
+			if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
 			{
 				Vector2 colliderBounds = GetComponent<BoxCollider2D>().bounds.extents;
 

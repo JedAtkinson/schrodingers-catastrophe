@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7754548714617108401}
   - component: {fileID: 1636176922}
   - component: {fileID: 1636176923}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Player
   m_TagString: Live_Cat
   m_Icon: {fileID: 0}
@@ -131,6 +131,7 @@ MonoBehaviour:
   anim: {fileID: 1206333219412774915}
   sr: {fileID: 4458933096073159128}
   frozen: 0
+  levelLoader: {fileID: 0}
 --- !u!95 &1206333219412774915
 Animator:
   serializedVersion: 3

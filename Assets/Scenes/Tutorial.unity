@@ -372,7 +372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -150, y: -50}
+  m_AnchoredPosition: {x: -2, y: -50}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &143100900
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 173560219}
   - component: {fileID: 173560221}
   - component: {fileID: 173560220}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 'Door + Switch '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1005,7 +1005,7 @@ GameObject:
   - component: {fileID: 821380587}
   - component: {fileID: 821380589}
   - component: {fileID: 821380588}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Dash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1113,7 +1113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1132,7 +1132,7 @@ Canvas:
   m_GameObject: {fileID: 916524562}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1213,11 +1213,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7012674413552055712, guid: b94e2d379c321dd4e9d0ac0abac886bb,
         type: 3}
-      propertyPath: opposite
-      value: 
-      objectReference: {fileID: 1878094080}
-    - target: {fileID: 7012674413552055712, guid: b94e2d379c321dd4e9d0ac0abac886bb,
-        type: 3}
       propertyPath: levelLoader
       value: 
       objectReference: {fileID: 2006959863}
@@ -1281,6 +1276,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead Cat
       objectReference: {fileID: 0}
+    - target: {fileID: 7012674413552055717, guid: b94e2d379c321dd4e9d0ac0abac886bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b94e2d379c321dd4e9d0ac0abac886bb, type: 3}
 --- !u!1 &1237631948
@@ -1317,7 +1317,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.0000038146973, y: 50}
+  m_AnchoredPosition: {x: 0.0000038146973, y: 450}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1237631950
@@ -1427,6 +1427,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Live Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458933096073159131, guid: fa049238e9cc4a04cb2b336c4d0297b1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4458933096073159134, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
@@ -1839,9 +1844,9 @@ GameObject:
   - component: {fileID: 1654864160}
   - component: {fileID: 1654864162}
   - component: {fileID: 1654864161}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2175,7 +2180,7 @@ GameObject:
   - component: {fileID: 2134889384}
   - component: {fileID: 2134889386}
   - component: {fileID: 2134889385}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}

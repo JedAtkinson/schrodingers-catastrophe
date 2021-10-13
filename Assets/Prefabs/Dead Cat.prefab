@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6679777504355410936}
   - component: {fileID: 6679777504355410943}
   - component: {fileID: 6679777504355410937}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Dead Cat
   m_TagString: Dead_Cat
   m_Icon: {fileID: 0}
@@ -129,6 +129,7 @@ MonoBehaviour:
   anim: {fileID: 6679777504355410943}
   sr: {fileID: 7012674413552055718}
   frozen: 0
+  levelLoader: {fileID: 0}
 --- !u!61 &6679777504355410936
 BoxCollider2D:
   m_ObjectHideFlags: 0

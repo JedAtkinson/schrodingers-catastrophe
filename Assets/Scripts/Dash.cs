@@ -33,13 +33,11 @@ public class Dash : MonoBehaviour
 				{
 					return;
 				}
-
 				//Checks if the target destination is clear of any obstacles and begins dash sequence if it is
-				if (!Physics2D.OverlapBox(dashEndPosition, new Vector2(colliderBounds.x, colliderBounds.y), 0))
+				if (!Physics2D.OverlapBox(dashEndPosition, new Vector2(colliderBounds.x, colliderBounds.y), 0, 0))
 				{
 
 					StartCoroutine(DashCoroutine());
-
 				}
 			}
         }

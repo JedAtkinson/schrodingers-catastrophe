@@ -12,6 +12,7 @@ public class MovePlayer : MonoBehaviour
 	public GameObject screen;
 	private Vector3 opp_pos;
 	public int facing;
+	public ParticleSystem dust;
 
 	public Animator anim;
 	public SpriteRenderer sr;
@@ -42,8 +43,13 @@ public class MovePlayer : MonoBehaviour
 			rb.velocity = new Vector2(direction * playerSpeed, rb.velocity.y);
 
 			// Walking animation
-			if (direction != 0) anim.SetBool("isWalking", true);
+			if (direction != 0)
+			{
+				anim.SetBool("isWalking", true);
+				dust.Play();
+			}
 			else anim.SetBool("isWalking", false);
+			
 
 
 		}

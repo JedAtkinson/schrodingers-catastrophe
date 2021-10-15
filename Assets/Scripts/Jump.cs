@@ -10,6 +10,8 @@ public class Jump : MonoBehaviour
     private bool jumpInput;
     private bool isJumping;
     private float gravity;
+    public MovePlayer playerScript;
+	public AudioController audioController;
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +28,13 @@ public class Jump : MonoBehaviour
 
         RaycastHit2D ray = Physics2D.Raycast(this.transform.position, new Vector2(0, -1 * gravity), Mathf.Infinity, LayerMask.GetMask("Platforms"));
 
-        if (jumpInput  && ray.distance <= 0.5f && isJumping == false)
+        if (jumpInput  && ray.distance <= 0.5f && isJumping == false && !playerScript.frozen)
         {
+            audioController.PlayAudioClip(audioController.audioClips[1]);
             isJumping = true;
             anim.SetTrigger("Jump");
             anim.SetBool("isWalking", false);
+
             rb.AddForce(new Vector2(0, jumpForce * gravity), ForceMode2D.Impulse);
         }
         if (!jumpInput)

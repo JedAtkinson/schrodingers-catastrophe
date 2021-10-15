@@ -12,6 +12,7 @@ public class Dash : MonoBehaviour
     public float dashChargeTime;
     public Animator anim;
     public bool swapFrozen;
+    public AudioController audioController;
 
     private void Start() {
         swapFrozen = false;
@@ -34,9 +35,8 @@ public class Dash : MonoBehaviour
 					return;
 				}
 				//Checks if the target destination is clear of any obstacles and begins dash sequence if it is
-				if (!Physics2D.OverlapBox(dashEndPosition, new Vector2(colliderBounds.x, colliderBounds.y), 0, 0))
+				if (!Physics2D.OverlapBox(dashEndPosition, new Vector2(colliderBounds.x, colliderBounds.y), 0))
 				{
-
 					StartCoroutine(DashCoroutine());
 				}
 			}
@@ -45,6 +45,7 @@ public class Dash : MonoBehaviour
 
     IEnumerator DashCoroutine()
     {
+        audioController.PlayAudioClip(audioController.audioClips[0]);
         playerScript.frozen = swapFrozen = true;
         anim.SetTrigger("Dash");
         anim.SetBool("isWalking", false);

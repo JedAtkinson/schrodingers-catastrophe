@@ -17,6 +17,7 @@ public class Dash : MonoBehaviour
     private void Start() {
         swapFrozen = false;
         playerScript = GetComponent<MovePlayer>();
+        audioController = FindObjectOfType<AudioController>();
     }
     private void Update() {
         if (!swapFrozen) {

@@ -9,6 +9,7 @@ public class ButtonCheck : MonoBehaviour
     public AudioController audioController;
     private void Start() {
         animator = GetComponent<Animator>();
+        audioController = FindObjectOfType<AudioController>();
     }
     private void OnTriggerEnter2D(Collider2D collision) {
         

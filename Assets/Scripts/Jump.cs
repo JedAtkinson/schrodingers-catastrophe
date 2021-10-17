@@ -16,7 +16,7 @@ public class Jump : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        audioController = FindObjectOfType<AudioController>();
     }
 
     // Update is called once per frame

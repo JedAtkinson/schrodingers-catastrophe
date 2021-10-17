@@ -25,6 +25,15 @@ public class ButtonCheck : MonoBehaviour
             //Button push function for interactibles here: opening door, activating mechanism, etc.
                 //Can recode to handle button pushes in the interactible script (will make this script constant), but this works for now
         }
+
+        if (collision.gameObject.tag == "interactable")
+        {
+            animator.SetBool("pushed", true);
+            door.SetActive(false);
+            audioController.PlayAudioClip(audioController.audioClips[2]);
+            //Button push function for interactibles here: opening door, activating mechanism, etc.
+            //Can recode to handle button pushes in the interactible script (will make this script constant), but this works for now
+        }
     }
     private void OnTriggerExit2D(Collider2D collision) {
 		if (collision.gameObject.tag == "Live_Cat") {
@@ -34,6 +43,12 @@ public class ButtonCheck : MonoBehaviour
             door.SetActive(true);
             audioController.PlayAudioClip(audioController.audioClips[3]);
         }
-		
+
+        if (collision.gameObject.tag == "interactable")
+        {
+            animator.SetBool("pushed", false);
+            door.SetActive(true);
+            audioController.PlayAudioClip(audioController.audioClips[3]);
+        }
     }
 }

@@ -24,8 +24,8 @@ public class FollowPlayer : MonoBehaviour
 
         edges = GameObject.FindGameObjectsWithTag("WorldEdge");
 
-        xMin = Mathf.Min((edges[0].transform.position.x), (edges[1].transform.position.x)) + width;
-        xMax = Mathf.Max((edges[0].transform.position.x), (edges[1].transform.position.x)) - width;
+        xMin = Mathf.Min((edges[0].transform.position.x), (edges[1].transform.position.x)) + width + 2;
+        xMax = Mathf.Max((edges[0].transform.position.x), (edges[1].transform.position.x)) - width - 2;
     }
 
     // Update is called once per frame

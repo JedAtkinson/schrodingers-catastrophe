@@ -17,6 +17,7 @@ public class Jump : MonoBehaviour
     void Start()
     {
         audioController = FindObjectOfType<AudioController>();
+        Debug.Log(typeof(AudioController));
     }
 
     // Update is called once per frame

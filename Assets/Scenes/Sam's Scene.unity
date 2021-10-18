@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4235717253695382072, guid: a952620051224c748932545492a85df6,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 4824a99b71c09cf47acd75f1b73c3671, type: 2}
     - target: {fileID: 4235717253695382074, guid: a952620051224c748932545492a85df6,
         type: 3}
       propertyPath: m_RootOrder
@@ -5822,6 +5827,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 3442785135581121242, guid: 17ddd006e159f3747ae47307b7e39f01,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 4824a99b71c09cf47acd75f1b73c3671, type: 2}
     - target: {fileID: 3442785135581121243, guid: 17ddd006e159f3747ae47307b7e39f01,
         type: 3}
       propertyPath: m_GravityScale
@@ -6615,6 +6625,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ramp
       objectReference: {fileID: 0}
+    - target: {fileID: 67348408616813965, guid: 1f0370b82f3d2e54ab8b88effd18e913,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 4824a99b71c09cf47acd75f1b73c3671, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f0370b82f3d2e54ab8b88effd18e913, type: 3}
 --- !u!1 &2090754010

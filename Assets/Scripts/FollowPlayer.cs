@@ -56,7 +56,10 @@ public class FollowPlayer : MonoBehaviour
             }
         }
 
+        if (cat.transform.position.y > 0) cameraY = Mathf.Clamp(cat.transform.position.y, 3, 20) - 1;
+        else cameraY = Mathf.Clamp(cat.transform.position.y, -20, -3) + 1;
+
         //Update position
-        this.transform.position = new Vector3(Mathf.Clamp(cameraX, xMin, xMax), this.transform.position.y, this.transform.position.z);
+        this.transform.position = new Vector3(Mathf.Clamp(cameraX, xMin, xMax), cameraY, this.transform.position.z);
     }
 }

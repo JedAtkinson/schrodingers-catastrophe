@@ -25,7 +25,7 @@ public class Jump : MonoBehaviour
     {
         gravity = GetComponent<Rigidbody2D>().gravityScale;
 
-        jumpInput = Input.GetKeyDown("space") | Input.GetKeyDown("w") | Input.GetKeyDown("p");
+        jumpInput = Input.GetKeyDown("space") | Input.GetKeyDown("w") | Input.GetKeyDown("up");
 
         RaycastHit2D ray = Physics2D.Raycast(this.transform.position, new Vector2(0, -1 * gravity), Mathf.Infinity, LayerMask.GetMask("Platforms"));
 

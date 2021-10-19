@@ -29,9 +29,9 @@ public class FollowPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && !GameObject.FindWithTag("Dead_Cat").GetComponent<Dash>().swapFrozen)
         {
             newCat = otherCat;
             otherCat = cat;

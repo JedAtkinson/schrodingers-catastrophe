@@ -20,7 +20,7 @@ public class LevelLoader : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && !GameObject.FindWithTag("Dead_Cat").GetComponent<Dash>().swapFrozen)
         {
             StartCoroutine(BlackSwitchScreen());
         }

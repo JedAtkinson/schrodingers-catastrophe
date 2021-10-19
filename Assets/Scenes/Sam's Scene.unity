@@ -5908,6 +5908,11 @@ PrefabInstance:
       objectReference: {fileID: 6200000, guid: 4824a99b71c09cf47acd75f1b73c3671, type: 2}
     - target: {fileID: 3442785135581121243, guid: 17ddd006e159f3747ae47307b7e39f01,
         type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442785135581121243, guid: 17ddd006e159f3747ae47307b7e39f01,
+        type: 3}
       propertyPath: m_GravityScale
       value: -1
       objectReference: {fileID: 0}
@@ -6708,7 +6713,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 4824a99b71c09cf47acd75f1b73c3671, type: 2}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f0370b82f3d2e54ab8b88effd18e913, type: 3}
 --- !u!224 &1882351387 stripped
@@ -6962,6 +6967,11 @@ PrefabInstance:
     - target: {fileID: 2234038409194794136, guid: fa049238e9cc4a04cb2b336c4d0297b1,
         type: 3}
       propertyPath: audioController
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4458933096073159129, guid: fa049238e9cc4a04cb2b336c4d0297b1,
+        type: 3}
+      propertyPath: m_Material
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4458933096073159131, guid: fa049238e9cc4a04cb2b336c4d0297b1,

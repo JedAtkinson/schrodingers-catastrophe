@@ -11,9 +11,19 @@ public class LevelLoader : MonoBehaviour
     // length of each animation (fade out: 0.5s, fade in: 0.5s)
     public float transitionTime = 0.5f;
 
+    public GameObject BlackScreen;
+
     public void LoadLevel(int sceneNumber)
     {
         StartCoroutine(LoadLevelCoroutine(sceneNumber));
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(BlackSwitchScreen());
+        }
     }
 
     IEnumerator LoadLevelCoroutine (int sceneNumber)
@@ -23,5 +33,12 @@ public class LevelLoader : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
         //Loads given sceneName
         SceneManager.LoadScene(sceneNumber);
+    }
+
+    IEnumerator BlackSwitchScreen()
+    {
+        BlackScreen.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        BlackScreen.SetActive(false);
     }
 }

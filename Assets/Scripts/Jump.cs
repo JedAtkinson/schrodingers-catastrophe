@@ -12,12 +12,13 @@ public class Jump : MonoBehaviour
     private float gravity;
     public MovePlayer playerScript;
 	public AudioController audioController;
+    private Vector2 colliderBounds;
 
     // Start is called before the first frame update
     void Start()
     {
         audioController = FindObjectOfType<AudioController>();
-        Debug.Log(typeof(AudioController));
+		colliderBounds = GetComponent<BoxCollider2D>().bounds.extents;
     }
 
     // Update is called once per frame
@@ -26,21 +27,22 @@ public class Jump : MonoBehaviour
         gravity = GetComponent<Rigidbody2D>().gravityScale;
 
         jumpInput = Input.GetKeyDown("space") | Input.GetKeyDown("w") | Input.GetKeyDown("up");
+        if (jumpInput && !playerScript.frozen) {
+			RaycastHit2D rayMiddle = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), new Vector2(0, -1 * gravity), 0.5f, ~(Physics2D.IgnoreRaycastLayer));
+			RaycastHit2D rayRight = Physics2D.Raycast(new Vector2(transform.position.x + colliderBounds.x, transform.position.y), new Vector2(0, -1 * gravity), 0.5f, ~(Physics2D.IgnoreRaycastLayer));
+			RaycastHit2D rayLeft = Physics2D.Raycast(new Vector2(transform.position.x - colliderBounds.x, transform.position.y), new Vector2(0, -1 * gravity), 0.5f, ~(Physics2D.IgnoreRaycastLayer));
+            
+            if ((rayLeft.collider || rayMiddle.collider || rayRight.collider) && !isJumping){
+				audioController.PlayAudioClip(audioController.audioClips[1]);
+				isJumping = true;
+				anim.SetTrigger("Jump");
+				anim.SetBool("isWalking", false);
 
-        RaycastHit2D ray = Physics2D.Raycast(this.transform.position, new Vector2(0, -1 * gravity), Mathf.Infinity, LayerMask.GetMask("Platforms"));
-
-        if (jumpInput  && ray.distance <= 0.5f && isJumping == false && !playerScript.frozen)
-        {
-            audioController.PlayAudioClip(audioController.audioClips[1]);
-            isJumping = true;
-            anim.SetTrigger("Jump");
-            anim.SetBool("isWalking", false);
-
-            rb.AddForce(new Vector2(0, jumpForce * gravity), ForceMode2D.Impulse);
+				rb.AddForce(new Vector2(0, jumpForce * gravity), ForceMode2D.Impulse);
+            }
         }
-        if (!jumpInput)
-        {
-            isJumping = false;
-        }
-    }
+		if (!jumpInput) {
+			isJumping = false;
+		}
+	}
 }

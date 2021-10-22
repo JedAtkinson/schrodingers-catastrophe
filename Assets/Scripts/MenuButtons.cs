@@ -77,7 +77,7 @@ public class MenuButtons : MonoBehaviour
     //Sets master volume from VolumeSlider (will impiment if sound added)
     public void SetVolume(float volume)
     {
-        Debug.Log(volume);
+        AudioListener.volume = volume;
     }
 
     //Sets fullscreen from FullscreenToggle

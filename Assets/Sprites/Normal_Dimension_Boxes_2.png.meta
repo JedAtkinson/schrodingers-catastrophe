@@ -1,0 +1,1136 @@
+fileFormatVersion: 2
+guid: 6e74bf18c1f2d3d49afa3fbe27444f53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8251702269275820857
+    second: Normal_Dimension_Boxes_2_0
+  - first:
+      213: 8686311743224883977
+    second: Normal_Dimension_Boxes_2_1
+  - first:
+      213: -8223208430309572006
+    second: Normal_Dimension_Boxes_2_2
+  - first:
+      213: -5589730571735963857
+    second: Normal_Dimension_Boxes_2_3
+  - first:
+      213: 377904040664508028
+    second: Normal_Dimension_Boxes_2_4
+  - first:
+      213: 5307553030289816911
+    second: Normal_Dimension_Boxes_2_5
+  - first:
+      213: 7950564887865217140
+    second: Normal_Dimension_Boxes_2_6
+  - first:
+      213: 1421135374942700184
+    second: Normal_Dimension_Boxes_2_7
+  - first:
+      213: 8349540761727238576
+    second: Normal_Dimension_Boxes_2_8
+  - first:
+      213: 4824195293098063223
+    second: Normal_Dimension_Boxes_2_9
+  - first:
+      213: -2338865093817689801
+    second: Normal_Dimension_Boxes_2_10
+  - first:
+      213: -2032418919055406003
+    second: Normal_Dimension_Boxes_2_11
+  - first:
+      213: 1579232064248097600
+    second: Normal_Dimension_Boxes_2_12
+  - first:
+      213: -1767873731221987569
+    second: Normal_Dimension_Boxes_2_13
+  - first:
+      213: 6519540621046188936
+    second: Normal_Dimension_Boxes_2_14
+  - first:
+      213: -5948992005293521604
+    second: Normal_Dimension_Boxes_2_15
+  - first:
+      213: -4421266842936540736
+    second: Normal_Dimension_Boxes_2_16
+  - first:
+      213: -1153027791458942347
+    second: Normal_Dimension_Boxes_2_17
+  - first:
+      213: 4192752762024124371
+    second: Normal_Dimension_Boxes_2_18
+  - first:
+      213: 8024682663482848213
+    second: Normal_Dimension_Boxes_2_19
+  - first:
+      213: -3909445439567540390
+    second: Normal_Dimension_Boxes_2_20
+  - first:
+      213: 674302575534439573
+    second: Normal_Dimension_Boxes_2_21
+  - first:
+      213: 2654570634928932753
+    second: Normal_Dimension_Boxes_2_22
+  - first:
+      213: -880864101657748252
+    second: Normal_Dimension_Boxes_2_23
+  - first:
+      213: 6969993361997937006
+    second: Normal_Dimension_Boxes_2_24
+  - first:
+      213: -1000676333124675700
+    second: Normal_Dimension_Boxes_2_25
+  - first:
+      213: 6794723933937153119
+    second: Normal_Dimension_Boxes_2_26
+  - first:
+      213: 1524538577279257926
+    second: Normal_Dimension_Boxes_2_27
+  - first:
+      213: 6964665657130357426
+    second: Normal_Dimension_Boxes_2_28
+  - first:
+      213: -8135950282974084069
+    second: Normal_Dimension_Boxes_2_29
+  - first:
+      213: -1847142516925535231
+    second: Normal_Dimension_Boxes_2_30
+  - first:
+      213: -6678229786040955630
+    second: Normal_Dimension_Boxes_2_31
+  - first:
+      213: -530005460533025362
+    second: Normal_Dimension_Boxes_2_32
+  - first:
+      213: -5839848081297078425
+    second: Normal_Dimension_Boxes_2_33
+  - first:
+      213: -6551086981768434483
+    second: Normal_Dimension_Boxes_2_34
+  - first:
+      213: -8099714181150993498
+    second: Normal_Dimension_Boxes_2_35
+  - first:
+      213: -4463080118227470946
+    second: Normal_Dimension_Boxes_2_36
+  - first:
+      213: -6170484036863076452
+    second: Normal_Dimension_Boxes_2_37
+  - first:
+      213: 6306890240755927503
+    second: Normal_Dimension_Boxes_2_38
+  - first:
+      213: 5585771718664325393
+    second: Normal_Dimension_Boxes_2_39
+  - first:
+      213: 6522472954341971804
+    second: Normal_Dimension_Boxes_2_40
+  - first:
+      213: -7321028402372361579
+    second: Normal_Dimension_Boxes_2_41
+  - first:
+      213: -5269065759049667328
+    second: Normal_Dimension_Boxes_2_42
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 167
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cca78761801c7d80800000000000000
+      internalID: -8251702269275820857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 167
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b2937228afb8870800000000000000
+      internalID: 8686311743224883977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 167
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a528665408b41ed80800000000000000
+      internalID: -8223208430309572006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 157
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27698129a94d62b0800000000000000
+      internalID: -5589730571735963857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_4
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 157
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c762ef609b59e3500800000000000000
+      internalID: 377904040664508028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_5
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 147
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4df8f44c5738a940800000000000000
+      internalID: 5307553030289816911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_6
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 167
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47056e044a4165e60800000000000000
+      internalID: 7950564887865217140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 167
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89283311813e8b310800000000000000
+      internalID: 1421135374942700184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_8
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 164
+        width: 45
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b18564c5178fd370800000000000000
+      internalID: 8349540761727238576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 156
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775b8343f0cf2f240800000000000000
+      internalID: 4824195293098063223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_10
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 156
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7399f69c69eaa8fd0800000000000000
+      internalID: -2338865093817689801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 156
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c4be6e2c56bc3e0800000000000000
+      internalID: -2032418919055406003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 156
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b2a6ff13f8ae510800000000000000
+      internalID: 1579232064248097600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_13
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 156
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fd4c245304777e0800000000000000
+      internalID: -1767873731221987569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_14
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 154
+        width: 29
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b003027af0a7a50800000000000000
+      internalID: 6519540621046188936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 145
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3547d05a4fe07da0800000000000000
+      internalID: -5948992005293521604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 145
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c10e813b3184a2c0800000000000000
+      internalID: -4421266842936540736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 125
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572cfe9255f9fffe0800000000000000
+      internalID: -1153027791458942347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_18
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 125
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df5c734c66af2a30800000000000000
+      internalID: 4192752762024124371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_19
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 136
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d37128ad566d5f60800000000000000
+      internalID: 8024682663482848213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_20
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 136
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f4ec9f51cdeb9c0800000000000000
+      internalID: -3909445439567540390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_21
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 116
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c7cddae9a9b5900800000000000000
+      internalID: 674302575534439573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_22
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 145
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1974f1e8dede6d420800000000000000
+      internalID: 2654570634928932753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_23
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 143
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecdb4d34ca86c3f0800000000000000
+      internalID: -880864101657748252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_24
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 143
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69b7bcb8046ab060800000000000000
+      internalID: 6969993361997937006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 134
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8796f44d22ec12f0800000000000000
+      internalID: -1000676333124675700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_26
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 124
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f543b2dfa65bb4e50800000000000000
+      internalID: 6794723933937153119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_27
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 115
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d0c1932cf382510800000000000000
+      internalID: 1524538577279257926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_28
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 115
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b21e98c38677a060800000000000000
+      internalID: 6964665657130357426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_29
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 134
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b144711e25c471f80800000000000000
+      internalID: -8135950282974084069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_30
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 134
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ce12ddaa1ad56e0800000000000000
+      internalID: -1847142516925535231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 123
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d889274692253a0800000000000000
+      internalID: -6678229786040955630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_32
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 113
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea569eb77da05a8f0800000000000000
+      internalID: -530005460533025362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_33
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 113
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7678a046c11b4fea0800000000000000
+      internalID: -5839848081297078425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_34
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 103
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcca107691dd515a0800000000000000
+      internalID: -6551086981768434483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_35
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 94
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a31d4acdd8089f80800000000000000
+      internalID: -8099714181150993498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_36
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 94
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9571f46744ff02c0800000000000000
+      internalID: -4463080118227470946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_37
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 85
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97de8a06790e5aa0800000000000000
+      internalID: -6170484036863076452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_38
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 92
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc982a53243968750800000000000000
+      internalID: 6306890240755927503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_39
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 11
+        width: 132
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119096f88c5a48d40800000000000000
+      internalID: 5585771718664325393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_40
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 44
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5755ac289a748a50800000000000000
+      internalID: 6522472954341971804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_41
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 12
+        width: 88
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592cc0ed47b766a90800000000000000
+      internalID: -7321028402372361579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Normal_Dimension_Boxes_2_42
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 12
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dabaddb9480e6b0800000000000000
+      internalID: -5269065759049667328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

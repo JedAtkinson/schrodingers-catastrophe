@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sam's Scene.unity
     guid: a1ddb5eb05d2ba84e9709ac225e4aaed
+  - enabled: 1
+    path: Assets/Scenes/End Scene.unity
+    guid: a04b5738beccab94ea884873bc7fe1fe
   m_configObjects: {}

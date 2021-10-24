@@ -69,13 +69,4 @@ public class MovePlayer : MonoBehaviour
 		}
 
 	}
-
-	void OnTriggerEnter2D(Collider2D collider)
-	{
-		if (collider.name == "Goal")
-        {
-			levelLoader.GetComponent<LevelLoader>().LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
-
-		}
-	}
 }

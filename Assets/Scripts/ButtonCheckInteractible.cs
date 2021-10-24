@@ -16,7 +16,7 @@ public class ButtonCheckInteractible : MonoBehaviour
         if (collision.gameObject.tag == "interactable")
         {
             animator.SetBool("pushed", true);
-            door.SetActive(false);
+            door.SetActive(!door.activeSelf);
             audioController.PlayAudioClip(audioController.audioClips[2]);
             //Button push function for interactibles here: opening door, activating mechanism, etc.
             //Can recode to handle button pushes in the interactible script (will make this script constant), but this works for now
@@ -26,7 +26,7 @@ public class ButtonCheckInteractible : MonoBehaviour
         if (collision.gameObject.tag == "interactable")
         {
             animator.SetBool("pushed", false);
-            door.SetActive(true);
+            door.SetActive(!door.activeSelf);
             audioController.PlayAudioClip(audioController.audioClips[3]);
         }
     }

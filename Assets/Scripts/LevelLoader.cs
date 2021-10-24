@@ -18,6 +18,11 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevelCoroutine(sceneNumber));
     }
 
+    public void RestartLevel()
+    {
+        StartCoroutine(LoadLevelCoroutine(SceneManager.GetActiveScene().buildIndex));
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R) && !GameObject.FindWithTag("Dead_Cat").GetComponent<Dash>().swapFrozen)

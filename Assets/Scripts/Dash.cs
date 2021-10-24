@@ -46,10 +46,10 @@ public class Dash : MonoBehaviour
     }
 
     //Uncomment this method to see the dash end position, you'll notice that it will allow you to dash if it isn't *intersecting* and colliders
-    /* void OnDrawGizmos() {
+    void OnDrawGizmos() {
 		Gizmos.color = Color.red;
 		Gizmos.DrawWireCube(dashEndPosition, new Vector3(colliderBounds.x * 2, colliderBounds.y * 2, 1));
-    } */
+    }
 
     IEnumerator DashCoroutine()
     {

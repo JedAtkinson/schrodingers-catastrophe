@@ -1294,6 +1294,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6679777504355410937, guid: b94e2d379c321dd4e9d0ac0abac886bb,
+        type: 3}
+      propertyPath: dashDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7012674413552055712, guid: b94e2d379c321dd4e9d0ac0abac886bb,
         type: 3}
       propertyPath: dust
